@@ -18,6 +18,7 @@ public class ThreadPoolEx {
 
     public void perform() throws InterruptedException {
 
+        //todo: no need for threads here, replace with runnableProducer()
         for(Thread thread : getTreads(100)) {
             executorService.submit(thread);
         }
